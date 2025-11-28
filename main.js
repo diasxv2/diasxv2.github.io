@@ -23,12 +23,16 @@ document.querySelector(".contact-box").addEventListener("submit", e => {
 const music = document.getElementById("bgMusic");
 const btn = document.getElementById("musicBtn");
 
+// Volume bas dès le début
+music.volume = 0.10;
+
 btn.addEventListener("click", () => {
-  if (music.paused) {
-    music.play();
-    btn.textContent = "🔊";
-  } else {
-    music.pause();
-    btn.textContent = "🔇";
-  }
+    if (music.muted) {
+        music.muted = false;
+        btn.textContent = "🔊";
+    } else {
+        music.muted = true;
+        btn.textContent = "🔈";
+    }
 });
+
