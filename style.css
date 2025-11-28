@@ -105,3 +105,94 @@ h2 {
         transform: translateY(0);
     }
 }
+
+.cards-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.card {
+  background: #0d0d0d;
+  border: 1px solid #1a1a1a;
+  padding: 25px;
+  width: 280px;
+  border-radius: 18px;
+  color: white;
+  transition: transform 0.2s ease-out, box-shadow 0.2s;
+  box-shadow: 0 0 10px rgba(0,255,255,0.05);
+}
+
+.card:hover {
+  box-shadow: 0 10px 40px rgba(0,255,255,0.2);
+}
+
+#contact {
+  padding: 60px;
+  text-align: center;
+  color: white;
+}
+
+.contact-box {
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-box input,
+.contact-box textarea {
+  background: #0f0f0f;
+  border: 1px solid #1f1f1f;
+  padding: 12px;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.contact-box input:focus,
+.contact-box textarea:focus {
+  border-color: cyan;
+  box-shadow: 0 0 10px rgba(0,255,255,0.3);
+}
+
+.contact-box button {
+  background: cyan;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  color: black;
+  transition: 0.2s;
+}
+
+.contact-box button:hover {
+  transform: scale(1.05);
+  background: white;
+}
+
+#musicBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  border: none;
+  background: #0f0f0f;
+  color: cyan;
+  font-size: 22px;
+  padding: 12px 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0,255,255,0.15);
+  transition: 0.2s;
+}
+
+#musicBtn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(0,255,255,0.4);
+}
