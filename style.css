@@ -1,1 +1,107 @@
+/* --- GLOBAL --- */
+body {
+    margin: 0;
+    padding: 0;
+    background: #0c0c0c;
+    color: #e5e5e5;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
 
+/* --- NAVBAR --- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #181818;
+    z-index: 50;
+}
+
+nav a {
+    color: #e5e5e5;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00ffc8;
+    text-shadow: 0 0 8px #00ffc8;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero span {
+    color: #00ffc8;
+}
+
+.hero p {
+    font-size: 22px;
+    opacity: 0.8;
+}
+
+/* --- SECTIONS --- */
+section {
+    padding: 120px 80px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* --- CARDS PROJECTS --- */
+.project-card {
+    background: #141414;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #1f1f1f;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    border-color: #00ffc8;
+    box-shadow: 0 0 15px #00ffc8;
+}
+
+/* --- PROFILE PHOTO --- */
+.profile {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 2px solid #00ffc8;
+}
+
+/* --- ANIMATION FADE-IN --- */
+.fade {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
